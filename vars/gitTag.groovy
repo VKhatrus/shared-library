@@ -1,5 +1,5 @@
 #!/usr/bin/groovy
-def call(body) {
+def call(config, body) {
     // evaluate the body block, and collect configuration into the object
     def config = [:]
     body.delegate = config
