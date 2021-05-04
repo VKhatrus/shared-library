@@ -2,8 +2,8 @@
 def call(body) {
     // evaluate the body block, and collect configuration into the object
     def config = [:]
-    body.resolveStrategy = Closure.DELEGATE_FIRST
     body.delegate = config
+    body.resolveStrategy = Closure.DELEGATE_FIRST
     //body()
     echo "\u001B[32mINFO: Publishing...\u001B[m"
     body()
