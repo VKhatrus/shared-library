@@ -29,4 +29,5 @@ def call(config, body) {
 
 //    sh "git tag -fa v${config.releaseVersion} -m 'Release version ${config.releaseVersion}'"
 //    sh "git push origin v${config.releaseVersion}"
+      sh "echo ${config.releaseVersion}"
 }
