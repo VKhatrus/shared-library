@@ -1,7 +1,7 @@
 #!/usr/bin/groovy
 def call(config, body) {
     // evaluate the body block, and collect configuration into the object
-    def config = [:]
+    //def config = [:]
     body.delegate = config
     body.resolveStrategy = Closure.DELEGATE_FIRST
     //body()
