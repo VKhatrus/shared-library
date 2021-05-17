@@ -1,2 +1,2 @@
 # shared-library
-Shared library for Jenkins
+Shared libraries for Jenkins
